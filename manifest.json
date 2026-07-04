@@ -7,5 +7,9 @@
     "matches": ["https://term.ptt.cc/*"],
     "js": ["ptt.js"],
     "run_at": "document_end"
+  }, {
+    "matches": ["https://hamivideo.hinet.net/*"],
+    "js": ["hamivideo.js"],
+    "run_at": "document_idle"
   }]
 }
