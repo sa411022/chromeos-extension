@@ -15,7 +15,7 @@ document.addEventListener("fullscreenchange", () => {
 
   video.style.width = "1920px";
   video.style.height = "1080px";
-  video.style.transform = `scale(${1 / dpr})`;
+  video.style.transform = `scale(${window.innerWidth / 1920})`;
   video.style.transformOrigin = "top left";
   video.style.position = "fixed";
   video.style.top = "0";
