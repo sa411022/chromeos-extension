@@ -7,11 +7,5 @@
     "matches": ["https://term.ptt.cc/*"],
     "js": ["ptt.js"],
     "run_at": "document_end"
-  }],
-  "permissions": [
-    "system.display"
-  ],
-  "action": {
-    "default_popup": "popup.html"
-  }
+  }]
 }
