@@ -1,18 +1,23 @@
-document.addEventListener('fullscreenchange', () => {
-  const video = document.fullscreenElement?.querySelector('video')
-    || (document.fullscreenElement?.tagName === 'VIDEO' ? document.fullscreenElement : null);
+document.addEventListener("fullscreenchange", () => {
+  const video = document.fullscreenElement?.querySelector("video#h5video");
+  const dpr = window.devicePixelRatio;
 
-  if (!video) return;
+  if (!video || dpr === Math.floor(dpr)) {
+    video.style.width = "100%";
+    video.style.height = "100%";
+    video.style.transform = "";
+    video.style.transformOrigin = "";
+    video.style.position = "";
+    video.style.top = "";
+    video.style.left = "";
+    return;
+  };
 
-  const dpr = window.devicePixelRatio; // 2.4
-  if (dpr === Math.floor(dpr)) return; // 整數倍不需修正
-
-  // 讓 video 以物理像素尺寸渲染，再用 transform 縮回畫面大小
-  video.style.width = `${window.innerWidth * dpr}px`;
-  video.style.height = `${window.innerHeight * dpr}px`;
+  video.style.width = "1920px";
+  video.style.height = "1080px";
   video.style.transform = `scale(${1 / dpr})`;
-  video.style.transformOrigin = 'top left';
-  video.style.position = 'fixed';
-  video.style.top = '0';
-  video.style.left = '0';
+  video.style.transformOrigin = "top left";
+  video.style.position = "fixed";
+  video.style.top = "0";
+  video.style.left = "0";
 });
