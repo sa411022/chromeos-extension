@@ -1,6 +1,11 @@
 {
   "manifest_version": 3,
-  "name": "SA ChromeOS",
+  "name": "SA ChromeOS Customization",
   "version": "0.0.1",
-  "description": "SA's customization for ChromeOS"
+  "description": "SA's ChromeOS customizations",
+  "content_scripts": [{
+    "matches": ["https://term.ptt.cc/*"],
+    "js": ["ptt.js"],
+    "run_at": "document_end"
+  }]
 }
