@@ -1,8 +1,8 @@
 document.addEventListener("fullscreenchange", () => {
-  const video = document.fullscreenElement?.querySelector("video#h5video");
+  const video = document.body.querySelector("video#h5video");
   const scale = Math.min(window.innerWidth / 1920, window.innerHeight / 1080);
 
-  if (!video || scale === Math.floor(scale)) {
+  if(!document.fullscreenElement?.contains(video) || (window.innerWidth >= 1920 && window.innerHeight >= 1080)) {
     video.style.width = "100%";
     video.style.height = "100%";
     video.style.transform = "";
