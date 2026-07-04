@@ -1,0 +1,6 @@
+{
+  "manifest_version": 3,
+  "name": "SA ChromeOS",
+  "version": "0.0.1",
+  "description": "SA's customization for ChromeOS"
+}
