@@ -1,8 +1,8 @@
 document.addEventListener("fullscreenchange", () => {
   const video = document.fullscreenElement?.querySelector("video#h5video");
-  const dpr = window.devicePixelRatio;
+  const scale = Math.min(window.innerWidth / 1920, window.innerHeight / 1080);
 
-  if (!video || dpr === Math.floor(dpr)) {
+  if (!video || scale === Math.floor(scale)) {
     video.style.width = "100%";
     video.style.height = "100%";
     video.style.transform = "";
@@ -15,7 +15,7 @@ document.addEventListener("fullscreenchange", () => {
 
   video.style.width = "1920px";
   video.style.height = "1080px";
-  video.style.transform = `scale(${window.innerWidth / 1920})`;
+  video.style.transform = `scale(${scale})`;
   video.style.transformOrigin = "top left";
   video.style.position = "fixed";
   video.style.top = "0";
