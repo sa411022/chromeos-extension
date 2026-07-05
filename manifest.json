@@ -11,5 +11,9 @@
     "matches": ["https://hamivideo.hinet.net/*"],
     "js": ["hamivideo.js"],
     "run_at": "document_idle"
+  }, {
+    "matches": ["https://twpkinfo.com/*"],
+    "js": ["twpkinfo.js"],
+    "run_at": "document_idle"
   }]
 }
