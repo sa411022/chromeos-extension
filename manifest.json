@@ -13,7 +13,7 @@
     "run_at": "document_idle"
   }, {
     "matches": ["https://twpkinfo.com/*"],
-    "js": ["twpkinfo.js"],
+    "js": ["twpkinfo.css"],
     "run_at": "document_idle"
   }]
 }
