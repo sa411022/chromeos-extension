@@ -16,10 +16,8 @@
     "js": ["twpkinfo.js"],
     "run_at": "document_idle"
   }],
-  "web_accessible_resources": [
-    {
+  "web_accessible_resources": [{
       "resources": ["ptt.png"],
       "matches": ["https://term.ptt.cc/*"]
-    }
-  ]
+  }]
 }
