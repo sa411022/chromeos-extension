@@ -19,5 +19,8 @@
   "web_accessible_resources": [{
       "resources": ["ptt.png"],
       "matches": ["https://term.ptt.cc/*"]
+  }, {
+      "resources": ["twpkinfo.png"],
+      "matches": ["https://twpkinfo.com/*"]
   }]
 }
