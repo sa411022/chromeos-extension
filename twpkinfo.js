@@ -4,3 +4,9 @@ interval = setInterval(() => {
     clearInterval(interval);
   }
 }, 1000);
+
+const link = document.createElement("link");
+link.rel = "icon";
+link.type = "image/png";
+link.href = chrome.runtime.getURL("twpkinfo.png");
+document.head.appendChild(link);
