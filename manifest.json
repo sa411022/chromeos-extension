@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "SA ChromeOS Customization",
+  "name": "SA Chrome Customization",
   "version": "0.0.1",
-  "description": "SA's ChromeOS customizations",
+  "description": "",
   "content_scripts": [{
     "matches": ["https://www.cwa.gov.tw/*"],
     "js": ["cwa.js"],
