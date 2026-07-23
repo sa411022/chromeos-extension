@@ -8,10 +8,6 @@
     "js": ["cwa.js"],
     "run_at": "document_idle"
   }, {
-    "matches": ["https://hamivideo.hinet.net/*"],
-    "js": ["hamivideo.js"],
-    "run_at": "document_idle"
-  }, {
     "matches": ["https://term.ptt.cc/*"],
     "js": ["ptt.js"],
     "run_at": "document_end"
